@@ -114,9 +114,10 @@ nav {
 }
 
 .system-card {
-  border: 2px solid #FF9626;
-  transition: all .5s ease-in-out;
-
+    border: 2px solid #FF9626;
+    transition: all .5s ease-in-out;
+    border-radius: 4px;
+    box-shadow: 5px 6px 3px 1px gray;
 }
 .card1, .card2 , .card3{
 display: flex;
