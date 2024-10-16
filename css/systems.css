@@ -117,7 +117,6 @@ nav {
     border: 2px solid #FF9626;
     transition: all .5s ease-in-out;
     border-radius: 4px;
-    box-shadow: 0px 8px 10px 0px #6c757d94;
 }
 .card1, .card2 , .card3{
 display: flex;
