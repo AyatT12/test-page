@@ -74,10 +74,6 @@ textarea {
 /*//////////////////////////////////////////////////////////////////
 [ login ]*/
 
-.limiter {
-  width: 100%;
-  margin: 0 auto;
-}
 
 /* ////////////////////////////////// */
 nav {
@@ -270,4 +266,9 @@ footer {
     top: 0px;
   }
   
+}
+@media (min-width: 1200px) {
+  .system-card {
+    min-width: 250px;
+  }  
 }
