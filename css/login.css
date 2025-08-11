@@ -93,7 +93,6 @@ nav {
 }
 /* /////////////////////////////////// */
 .container-login {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -103,20 +102,7 @@ nav {
 
 }
 
-.wrap-login {
-  direction: ltr;
-  width: 55%;
-  height: 62%;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* padding:20px; */
-  box-shadow: 2px 10px 20px 0.2px rgba(128, 128, 128, 0.78);
 
-}
 .companyName{
   text-align: end;
   font-size: .9rem;
@@ -404,11 +390,11 @@ footer {
   }
 }
 
-@media (max-height: 700px) {
+/* @media (max-height: 700px) {
   .wrap-login{
     height: 100%;
   }
-}
+} */
 
 
 @media (max-width: 614px) {
@@ -418,5 +404,19 @@ footer {
   .wrap-login {
     width: 80%; 
    }
+
+}
+
+/*  */
+.logincard{    
+  background-color: #fff;
+  box-shadow: 2px 10px 20px 0.2px rgba(128, 128, 128, 0.78);
+  border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+  .logincard .row{
+   flex-direction: column-reverse;
+  }
 
 }

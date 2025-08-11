@@ -9,11 +9,11 @@
 
 body,
 html {
-  height: 100%;
   font-family: "cairo";
   background-color: #FEF8E8;
   letter-spacing: .0175rem;
-
+  position: relative;
+  z-index: 1;
 }
 
 /*---------------------------------------------*/
@@ -54,7 +54,8 @@ li {
   padding-left: 18px;
 }
 .logo{
-  height: 60px
+  /* width: 150px; */
+  height: 60px;
 }
 /*---------------------------------------------*/
 input {
@@ -113,11 +114,7 @@ nav {
   background-color: #Ffff;
 }
 
-.system-card {
-    border: 2px solid #FF9626;
-    transition: all .5s ease-in-out;
-    border-radius: 4px;
-}
+
 .card1, .card2 , .card3{
 display: flex;
 align-items: center;
@@ -221,3 +218,56 @@ footer {
   }
 }
 
+
+/*  */
+.system-card {
+  border: 2px solid #FF9626;
+  transition: all .5s ease-in-out;
+}
+.card-content{
+  background-color: #fef8e8;
+}
+
+.car{
+    position: absolute;
+    bottom: 0px;
+    width: 75%;
+    right: 25%;
+    z-index: -1;
+}
+.up{
+  position: absolute;
+  top: -50px;
+  width: 50%;
+  left: 0px;
+  z-index: -1;
+
+}
+.down{
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  z-index: -2;
+  width: 80%;
+}
+@media (max-height : 367px) {
+  .car , .down , .up{
+  display: none;
+  }
+  body{
+      background-image: url(../images/bg/bg.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh;
+      height: 100%;
+  }
+ 
+}
+@media (max-width : 768px) {
+  .up {
+    width: 100%;
+    top: 0px;
+  }
+  
+}
